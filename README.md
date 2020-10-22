@@ -14,4 +14,15 @@ if que_1 == "n":
     c = int(input("Enter the loan interest: "))
     i = c / (12 * 100)
     z = (math.ceil(math.log(b / (b - (i * a)), (1 + float(i)))))
-    print("It will take " + str(z // 12) + " years and " + str(z % 12) + " months to repay this loan!")
+    if z % 12 == 0:
+        print("It will take " + str(z // 12) + " years to repay this loan!")
+    elif z // 12 == 1:
+        print("It will take " + str(z // 12) + " year and " + str(z % 12) + " months to repay this loan!")
+    elif z // 12 == 1 and z % 12 ==  0:
+        print("It will take " + str(z // 12) + " year to repay this loan!")
+    elif z < 12:
+        print("It will take " + str(z) + " months to repay this loan!")
+    elif z == 1:
+        print("It will take " + str(z) + "month to repay this loan!")
+    else:
+        print("It will take " + str(z // 12) + " years and " + str(z % 12) + " months to repay this loan!")
