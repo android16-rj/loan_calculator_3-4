@@ -36,3 +36,14 @@ if que_1 == "a":
     i = c / (12 * 100)
     z = (math.ceil(a * (i * (1 + i) ** b) / (((1 + i) ** b) - 1)))
     print(f'Your monthly payment = {z}!')
+
+#:for 3rd part
+
+if que_1 == "p":
+    a = float(input("Enter the annuity payment: "))
+    b = int(input("Enter the number of periods: "))
+    c = float(input("Enter the loan interest: "))
+    i = c / (12 * 100)
+    z = (round(a / ((i * (1 + i) ** b) / (((1 + i) ** b) - 1))))
+    print(i)
+    print(f'Your loan principal = {z}!')
