@@ -2,7 +2,7 @@
 #:loan_calculator_3/4 stage
 
 import math
-
+#: for 1 st part
 que_1 = input("""What do you want to calculate? 
 type "n" for number of monthly payments,
 type "a" for annuity monthly payment amount,
